@@ -17,7 +17,7 @@ const Login = () => {
   const submit = (e) => {
     e.preventDefault();
     setCargando(true);
-
+    setError(null)
     //Utilizando REQRES
     axios
       .post(`https://reqres.in/api/login`, user)
